@@ -57,7 +57,10 @@ class _MultiAccountSelectionWidgetState
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           IconButton(
-            icon: Icon(Icons.keyboard_arrow_down, color: widget.arrowColor),
+            icon: Icon(
+              Icons.keyboard_arrow_down,
+              color: widget.arrowColor,
+            ),
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -82,7 +85,9 @@ class _MultiAccountSelectionWidgetState
                           height: 56,
                           width: 56,
                           decoration: BoxDecoration(
-                              shape: BoxShape.circle, color: Colors.grey[200]),
+                            shape: BoxShape.circle,
+                            color: Colors.grey[200],
+                          ),
                           child: widget.accountwithselectionList[index]
                               .accountImageWidget,
                         ),
@@ -110,7 +115,7 @@ class _MultiAccountSelectionWidgetState
                             } else {
                               currentlySelectedIndexList.add(index);
                             }
-                              },
+                          },
                         );
                       },
                     ),

@@ -34,7 +34,6 @@ showAccountSelectorSheet({
     backgroundColor: Colors.transparent,
     isDismissible: isSheetDismissible,
     isScrollControlled: true,
-    enableDrag: true,
     builder: (context) {
       return SingleAccountSelectionWidget(
         accountwithselectionList: accountwithselectionList,
@@ -57,7 +56,7 @@ showAccountSelectorSheet({
 Future<List<int>> showMultiAccountSelectorSheet({
   @required BuildContext context,
   @required List<Account> accountList,
-  List<int> initiallySelectedIndexList ,
+  List<int> initiallySelectedIndexList,
   Color checkedIconColor = Colors.green,
   Color doneButtonColor = Colors.blue,
   Color arrowColor = Colors.grey,
@@ -77,12 +76,11 @@ Future<List<int>> showMultiAccountSelectorSheet({
       context: context,
       backgroundColor: Colors.transparent,
       isScrollControlled: true,
-      enableDrag: true,
       isDismissible: isSheetDismissible,
       builder: (context) {
         return MultiAccountSelectionWidget(
           accountwithselectionList: accountwithselectionList,
-          initiallySelectedIndexList: initiallySelectedIndexList??[-1],
+          initiallySelectedIndexList: initiallySelectedIndexList ?? [-1],
           checkedIconColor: checkedIconColor,
           doneText: doneText,
           doneButtonColor: doneButtonColor,

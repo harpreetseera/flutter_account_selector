@@ -53,15 +53,14 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                 selectedRadioColor: Colors.amber, //Optional
                 unselectedTextColor: Colors.white, //Optional
                 selectedTextColor: Colors.amber, //Optional
-               //Optional
+                //Optional
                 tapCallback: (index) {
-                  
                   setState(() {
                     resultText =
                         "selected account is : ${accountList[index].title}";
                   });
                   print(resultText);
-                }, 
+                },
                 //Optional
                 addAccountTapCallback: () {
                   setState(() {

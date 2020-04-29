@@ -1,3 +1,7 @@
+## [0.0.2] - Release 
+
+* Fixed Health issues
+
 ## [0.0.1] - Release 
 
 * Customizable account selection modal bottom sheet widgets

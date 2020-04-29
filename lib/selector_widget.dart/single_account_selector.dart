@@ -58,7 +58,10 @@ class _SingleAccountSelectionWidgetState
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           IconButton(
-            icon: Icon(Icons.keyboard_arrow_down, color: widget.arrowColor),
+            icon: Icon(
+              Icons.keyboard_arrow_down,
+              color: widget.arrowColor,
+            ),
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -72,7 +75,7 @@ class _SingleAccountSelectionWidgetState
                 maxWidth: double.maxFinite,
               ),
               child: Padding(
-                padding: const EdgeInsets.only(bottom:16.0),
+                padding: const EdgeInsets.only(bottom: 16.0),
                 child: ListView.builder(
                   shrinkWrap: true,
                   physics: BouncingScrollPhysics(),
@@ -88,7 +91,8 @@ class _SingleAccountSelectionWidgetState
                                   shape: BoxShape.circle,
                                   color: Colors.grey[200]),
                               child: index ==
-                                      (widget.accountwithselectionList.length - 1)
+                                      (widget.accountwithselectionList.length -
+                                          1)
                                   ? CircleAvatar(
                                       radius: 28,
                                       backgroundColor: Colors.grey[200],
@@ -108,28 +112,28 @@ class _SingleAccountSelectionWidgetState
                                 : widget.unselectedTextColor,
                           ),
                         ),
-                        trailing:
-                            index == (widget.accountwithselectionList.length - 1)
-                                ? Offstage()
-                                : Icon(
-                                    (index == currentIndex)
-                                        ? Icons.radio_button_checked
-                                        : Icons.radio_button_unchecked,
-                                    color: (index == currentIndex)
-                                        ? widget.selectedRadioColor
-                                        : widget.unselectedRadioColor),
-                        onTap:
-                            index == (widget.accountwithselectionList.length - 1)
-                                ? widget.addAccountTapCallback
-                                : () {
-                                    setState(() {
-                                      currentIndex = index;
-                                    });
-                                    if (widget.hideSheetOnItemTap) {
-                                      Navigator.of(context).pop();
-                                    }
-                                    widget.tapCallback(index);
-                                  },
+                        trailing: index ==
+                                (widget.accountwithselectionList.length - 1)
+                            ? Offstage()
+                            : Icon(
+                                (index == currentIndex)
+                                    ? Icons.radio_button_checked
+                                    : Icons.radio_button_unchecked,
+                                color: (index == currentIndex)
+                                    ? widget.selectedRadioColor
+                                    : widget.unselectedRadioColor),
+                        onTap: index ==
+                                (widget.accountwithselectionList.length - 1)
+                            ? widget.addAccountTapCallback
+                            : () {
+                                setState(() {
+                                  currentIndex = index;
+                                });
+                                if (widget.hideSheetOnItemTap) {
+                                  Navigator.of(context).pop();
+                                }
+                                widget.tapCallback(index);
+                              },
                       ),
                     );
                   },
