@@ -33,7 +33,7 @@ Import the package in your dart file
 import 'package:account_selector/account.dart';
 import 'package:account_selector/account_selector.dart';
 ```
-create an account list to provide to custom widgets 
+Create an account list to provide to custom widgets 
 ```dart
 List<Account> accountList = [
     Account(
@@ -59,17 +59,17 @@ Now to use the Single Account Selection modal sheet call showAccountSelectorShee
 showAccountSelectorSheet(
                 context: context,
                 accountList: accountList,
-                isSheetDismissible: false, //Optional
-                initiallySelectedIndex: 2, //Optional
-                hideSheetOnItemTap: true, //Optional
-                addAccountTitle: "Add User", //Optional
-                showAddAccountOption: true, //Optional
-                backgroundColor: Colors.indigo, //Optional
-                arrowColor: Colors.white, //Optional
-                unselectedRadioColor: Colors.white, //Optional
-                selectedRadioColor: Colors.amber, //Optional
-                unselectedTextColor: Colors.white, //Optional
-                selectedTextColor: Colors.amber, //Optional
+                isSheetDismissible: false,              // Optional
+                initiallySelectedIndex: 2,              // Optional
+                hideSheetOnItemTap: true,               // Optional
+                addAccountTitle: "Add User",            // Optional
+                showAddAccountOption: true,             // Optional
+                backgroundColor: Colors.indigo,         // Optional
+                arrowColor: Colors.white,               // Optional
+                unselectedRadioColor: Colors.white,     // Optional
+                selectedRadioColor: Colors.amber,       // Optional
+                unselectedTextColor: Colors.white,      // Optional
+                selectedTextColor: Colors.amber,        // Optional
                //Optional
                 tapCallback: (index) {
                   //use the index of item selected to do your work over here
@@ -86,16 +86,16 @@ onPressed: () async {
               var res = await showMultiAccountSelectorSheet(
                 context: context,
                 accountList: accountList,
-                initiallySelectedIndexList: [0, 2], //Optional
-                isSheetDismissible: false, //Optional
-                backgroundColor: Colors.orange[100], //Optional
-                arrowColor: Colors.purple, //Optional
-                doneButtonColor: Colors.purple, //Optional
-                doneText: "Done", //Optional
-                checkedIconColor: Colors.purple, //Optional
-                selectedTextColor: Colors.purple, //Optional
-                uncheckedIconColor: Colors.grey[800], //Optional
-                unselectedTextColor: Colors.grey[800], //Optional
+                initiallySelectedIndexList: [0, 2],         // Optional
+                isSheetDismissible: false,                  // Optional
+                backgroundColor: Colors.orange[100],        // Optional
+                arrowColor: Colors.purple,                  // Optional
+                doneButtonColor: Colors.purple,             // Optional
+                doneText: "Done",                           // Optional
+                checkedIconColor: Colors.purple,            // Optional
+                selectedTextColor: Colors.purple,           // Optional
+                uncheckedIconColor: Colors.grey[800],       // Optional
+                unselectedTextColor: Colors.grey[800],      // Optional
               );
            
               print(res.toString());
