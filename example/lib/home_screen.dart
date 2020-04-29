@@ -78,7 +78,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
               var res = await showMultiAccountSelectorSheet(
                 context: context,
                 accountList: accountList,
-                initiallySelectedIndexList: [0, 1], //Optional
+                initiallySelectedIndexList: [0, 2], //Optional
                 isSheetDismissible: false, //Optional
                 backgroundColor: Colors.orange[100], //Optional
                 arrowColor: Colors.purple, //Optional

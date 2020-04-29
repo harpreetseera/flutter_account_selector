@@ -57,7 +57,7 @@ showAccountSelectorSheet({
 Future<List<int>> showMultiAccountSelectorSheet({
   @required BuildContext context,
   @required List<Account> accountList,
-  List<int> initiallySelectedIndexList = const [-1],
+  List<int> initiallySelectedIndexList ,
   Color checkedIconColor = Colors.green,
   Color doneButtonColor = Colors.blue,
   Color arrowColor = Colors.grey,
@@ -82,7 +82,7 @@ Future<List<int>> showMultiAccountSelectorSheet({
       builder: (context) {
         return MultiAccountSelectionWidget(
           accountwithselectionList: accountwithselectionList,
-          initiallySelectedIndexList: initiallySelectedIndexList,
+          initiallySelectedIndexList: initiallySelectedIndexList??[-1],
           checkedIconColor: checkedIconColor,
           doneText: doneText,
           doneButtonColor: doneButtonColor,

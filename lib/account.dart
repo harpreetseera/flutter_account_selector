@@ -58,7 +58,10 @@ List<AccountWithSelectionBoolean> setupAccountWithMultiSelectionList(
       AccountWithSelectionBoolean(
         title: accountList[index].title,
         accountImageWidget: accountList[index].accountImageWidget,
-        selected: initiallySelectedIndexList.contains(index) ? true : false,
+        selected: (initiallySelectedIndexList == null ||
+                initiallySelectedIndexList.length < 1)
+            ? false
+            : initiallySelectedIndexList.contains(index) ? true : false,
       ),
     );
   }
