@@ -16,12 +16,12 @@ A Flutter package which provides helper widgets for selecting single or multiple
 <img src="https://raw.githubusercontent.com/harpreetseera/flutter_account_selector/master/demo.gif" height="35%" width="35%"  alt="Account Selector Demo"/>
 
 ## Installation
-[![Pub](https://img.shields.io/badge/pub-0.0.1-blue)](https://pub.dev/packages/account_selector)
+[![Pub](https://img.shields.io/badge/pub-0.0.2-blue)](https://pub.dev/packages/account_selector)
 
 Add the Package
 ```yaml
 dependencies:
-  progress_dialog: ^0.0.1
+  account_selector: ^0.0.2
 ```
 ## How to use
 
