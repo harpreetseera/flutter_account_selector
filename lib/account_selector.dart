@@ -1,8 +1,8 @@
 library account_selector;
 
 import 'package:account_selector/account.dart';
-import 'package:account_selector/selector_widget.dart/muti_account_selector.dart';
-import 'package:account_selector/selector_widget.dart/single_account_selector.dart';
+import 'package:account_selector/multi_account_selector_widget.dart';
+import 'package:account_selector/single_account_selector_widget.dart';
 import 'package:flutter/material.dart';
 
 showAccountSelectorSheet({

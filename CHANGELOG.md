@@ -1,3 +1,7 @@
+## [1.0.0] - Release 
+
+* Fixed maintenance issues
+
 ## [0.0.2] - Release 
 
 * Fixed Health issues

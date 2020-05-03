@@ -1,6 +1,6 @@
 name: account_selector
 description: A Flutter package which provides helper widgets for selecting single or multiple account/user from the given list.
-version: 0.0.2
+version: 1.0.0
 author: Harpreet Seera <harpreetseera8525@gmail.com>
 homepage: https://github.com/harpreetseera/flutter_account_selector
 
