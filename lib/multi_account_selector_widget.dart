@@ -126,19 +126,18 @@ class _MultiAccountSelectionWidgetState
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: RaisedButton(
-              textColor: Colors.white,
-              color: widget.doneButtonColor,
-              child: Text(widget.doneText),
-              onPressed: () {
-                Navigator.of(context).pop(currentlySelectedIndexList);
-              },
-              shape: new RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(30.0),
-              ),
-            ),
-          ),
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                    textStyle: MaterialStateProperty.resolveWith(
+                        (states) => TextStyle(color: Colors.white)),
+                    backgroundColor:
+                        MaterialStateProperty.all(widget.doneButtonColor)),
+                child: Text(widget.doneText),
+                onPressed: () {
+                  Navigator.of(context).pop(currentlySelectedIndexList);
+                },
+              )),
         ],
       ),
     );
